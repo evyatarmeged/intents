@@ -1,0 +1,15 @@
+apiVersion: k8s.otterize.com/v2alpha1
+kind: ClientIntents
+metadata:
+  name: client-intents-for-client2
+  namespace: otterize-tutorial-mapper
+spec:
+  workload:
+    name: client2
+    kind: Deployment
+  targets:
+    - service:
+        name: server
+    - internet:
+        domains:
+          - xkcd.com

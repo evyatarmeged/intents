@@ -16,3 +16,6 @@ spec:
           - 80
     - service:
         name: server
+    - kubernetes:
+        name: client2
+        kind: Deployment

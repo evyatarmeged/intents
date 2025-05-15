@@ -9,8 +9,6 @@ spec:
     kind: Deployment
   targets:
     # Intents for the non-Service targets are not supported in strict mode
-    - service:
-        name: server
     - internet:
         domains:
           - google.com

@@ -10,6 +10,3 @@ spec:
   targets:
     - service:
         name: server
-    - internet:
-        domains:
-          - xkcd.com

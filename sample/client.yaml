@@ -6,7 +6,7 @@ metadata:
 spec:
   workload:
     name: client
-    kind: Deployment
+#     kind: Deployment # Not allowed in strict mode
   targets:
     # Intents for the non-Service targets are not supported in strict mode
     - internet:
@@ -14,3 +14,8 @@ spec:
           - google.com
         ports:
           - 80
+    - kubernetes:
+#         name: client2 # Not allowed in strict mode
+#         kind: Deployment # Not allowed in strict mode
+    - service:
+        name: server

@@ -12,5 +12,3 @@ spec:
     - internet:
         domains:
           - google.com
-        ports:
-          - 80

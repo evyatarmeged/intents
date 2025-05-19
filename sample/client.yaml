@@ -8,7 +8,6 @@ spec:
     name: client
     kind: Deployment
   targets:
-    # Intents for the non-Service targets are not supported in strict mode
     - internet:
         domains:
           - google.com

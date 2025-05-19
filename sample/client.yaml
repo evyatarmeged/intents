@@ -9,6 +9,13 @@ spec:
     kind: Deployment
   targets:
     # Intents for the non-Service targets are not supported in strict mode
-    - internet:
-        domains:
-          - google.com
+#     - internet:
+#         domains:
+#           - google.com
+#     - kubernetes:
+#         name: client2
+#         kind: Deployment
+    - service:
+        name: server
+# Calls to targets other than service are not allowed in strict mode
+# Internet calls to domains or IPs without specifying ports are not allowed in strict mode
